@@ -1,5 +1,5 @@
 let path = document.querySelectorAll('#path')
-let shareBtn = document.querySelectorAll('#share')
+let shareBtn = document.querySelectorAll('.Btnn')
 let tab = document.querySelector('.tab')
 
 

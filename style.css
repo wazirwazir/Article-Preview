@@ -61,11 +61,11 @@ p {
 .share:hover {
     background-color: hsl(214, 17%, 51%);
 }
-#path {
+#paths {
     fill: hsl(214, 17%, 51%);
     width: 100%;
 }
-#path:hover {
+#paths:hover {
     fill: white;
 }
 .social {
