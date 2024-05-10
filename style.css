@@ -1,0 +1,133 @@
+* {
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    border-radius: 20px;
+    max-width: 700px;
+    background-color: white;
+    margin: 1em;
+    box-shadow: 0 0 15px 2px hsl(214, 19%, 77%);
+    position: relative;
+}
+p {
+    color: hsl(214, 17%, 51%);
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+.image img {
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    border-radius: 20px 0 0 20px;
+}
+.info {
+    padding: 1.5em 2em;
+}
+.secondPart {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.secondPart img {
+    width:45px;
+    border-radius: 50%;
+}
+.userInfo h4, .userInfo p {
+    margin: 0;
+}
+.share {
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    margin-left: auto;
+}
+.share:hover {
+    background-color: hsl(214, 17%, 51%);
+}
+#path {
+    fill: hsl(214, 17%, 51%);
+    width: 100%;
+}
+#path:hover {
+    fill: white;
+}
+.social {
+    background-color: transparent;
+}
+
+.last {
+    display: none;
+}
+.tab {
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: hsl(214, 17%, 51%);
+    position: absolute;
+    right: -2.4em;
+    bottom: 5em;
+    color: rgb(214, 214, 214);
+    text-align: center;
+    padding: 0.5em;
+    box-shadow: 0 0 13px 2px hsl(212, 24%, 86%);  
+    transition-duration: 1s;
+}
+.hide {
+    display: none;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+   
+    .info {
+        max-width: 300px;
+        padding: 0 1.8em 1.8em 1.8em;
+    }
+    
+    .image img {
+        height: 100%;
+        min-width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+   
+    h3 {
+        margin: 0.5em 0;
+    }
+    .last {
+        display: unset;
+    }
+    .tab {
+        background-color: hsl(217, 19%, 35%);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4.5em;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        padding: 1.8em;
+        color: rgb(214, 214, 214);
+    }
+    .hide {
+        display: none;
+    }
+}
